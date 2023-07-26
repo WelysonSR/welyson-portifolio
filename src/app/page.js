@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { age } from "@/utils/getAge";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
         <h1>Full Stack Developer</h1>
         <div className={styles.container_sobre}>
           <p>
-            Tenho 27 anos sou formado em analise e desenvolvimento de sistemas,
+            Tenho {age(1996, 3)} anos sou formado em analise e desenvolvimento de sistemas,
             e tenho curso técnico em desenvolvimento web.
             É conhecimento sobre os principais conceitos e serviços da nuvem AWS.
           </p>
