@@ -10,7 +10,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <div className={styles.icon}>
+        <div>
           <Link href="https://www.linkedin.com/in/welysonrosa/" target="_blank">
             <Image
               className={styles.logo}
