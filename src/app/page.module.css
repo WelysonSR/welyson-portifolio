@@ -60,11 +60,6 @@
   transition: transform 200ms;
 }
 
-.card h1 {
-  font-weight: 600;
-  margin-bottom: 5.5rem;
-}
-
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
@@ -85,6 +80,10 @@
   flex-direction: column;
   position: relative;
   padding: 4rem 0;
+}
+
+.center h1 {
+  font-size: 4rem;
 }
 
 .center::before {
@@ -215,6 +214,9 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+  .center h1 {
+    font-size: 9rem;
   }
 }
 
