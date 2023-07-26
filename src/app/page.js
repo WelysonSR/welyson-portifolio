@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Olá, eu sou o Welyson</p>
+        <p>Olá, 😁 eu sou Welyson Rosa</p>
       </div>
 
       <div className={styles.center}>
