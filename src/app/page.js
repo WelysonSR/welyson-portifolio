@@ -1,42 +1,51 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <p>Olá, eu sou o Welyson</p>
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <div className={styles.icon}>
+          <Link href="https://www.linkedin.com/in/welysonrosa/" target="_blank">
+            <Image
+              className={styles.logo}
+              src="/linkedin.svg"
+              alt="linkedin page"
+              width={30}
+              height={30}
+              priority
+            />
+          </Link>
+          <Link href="https://github.com/WelysonSR" target="_blank">
+            <Image
+              className={styles.logo}
+              src="/github.svg"
+              alt="github page"
+              width={30}
+              height={30}
+              priority
+            />
+          </Link>
+          <Link
+            href="https://drive.google.com/file/d/1TAjvlSJiflyT1F-TR6mslpQQncjZ8eQF/view?usp=sharing"
+            target="_blank"
+          >
+            <Image
+              className={styles.logo}
+              src="/documento.svg"
+              alt="currículo page"
+              width={30}
+              height={30}
+              priority
+            />
+          </Link>
+        </div>
+        <h1>Full Stack Developer</h1>
       </div>
 
       <div className={styles.grid}>
@@ -91,5 +100,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
