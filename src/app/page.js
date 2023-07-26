@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Olá, 😁 eu sou Welyson Rosa</p>
+        <p>Olá, 😁 eu sou Welyson Rosa!</p>
       </div>
 
       <div className={styles.center}>
@@ -46,6 +46,13 @@ export default function Home() {
           </Link>
         </div>
         <h1>Full Stack Developer</h1>
+        <div className={styles.container_sobre}>
+          <p>
+            Tenho 27 anos sou formado em analise e desenvolvimento de sistemas,
+            e tenho curso técnico em desenvolvimento web.
+            É conhecimento sobre os principais conceitos e serviços da nuvem AWS.
+          </p>
+        </div>
       </div>
 
       <div className={styles.grid}>
